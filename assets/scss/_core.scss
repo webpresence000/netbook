@@ -1,0 +1,16 @@
+// core styles order start
+@import "inc/variables";
+@import "inc/colorpalette";
+@import "inc/reset";
+@import "inc/utilities";
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+@import "components/caret";
+@import "components/header";
+@import "components/footer";
+// core styles order end

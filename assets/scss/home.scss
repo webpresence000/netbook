@@ -1,0 +1,222 @@
+@import "core";
+@import "components/buttons";
+@import "components/forms";
+$img_dir: "../../images/" !default;
+
+.banner {
+    padding: 70px 0;
+}
+.cta {
+    .btn {
+        margin-right: 18px;
+    }
+}
+/* About section */
+.about-section {
+    padding: 122px 0;
+    .featured-img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Achievement section */
+$content-box-radius : 14px;
+.achievement-section {
+    margin-bottom: 180px;
+    .content-box {
+        position: relative;
+        margin: 1px;
+        border-radius: $content-box-radius;
+        padding: 42px 18px 40px 44px;
+        transition: all 0.3s;
+        &:before {
+            content: '';
+            background: linear-gradient(180deg, rgba(185, 185, 185, 0.1188) 0%, rgba(94, 94, 94, 0.1566) 100%);
+            border-radius: $content-box-radius;
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            z-index: -1;
+        }
+        .title {
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 26px 25px;
+            font-size: 20px;
+            padding-left: 38px;
+            &.icon-rating {
+                background-image: url(#{$img_dir}icons/star-outline.svg);
+            }
+            &.icon-trophy {
+                background-image: url(#{$img_dir}icons/trophy-outline.svg);
+            }
+        }
+        .sub-title {
+            &.icon-members {
+                background: url(#{$img_dir}home/people.png) no-repeat left 6px;
+                margin-left: -20px;
+                padding-left: 94px;
+            }
+            &.icon-github {
+                background: url(#{$img_dir}home/github.png) no-repeat left 8px;
+                margin-left: -14px;
+                padding-left: 50px;
+            }
+        }
+        .box-link {
+            background-image: url(#{$img_dir}icons/arrow-right-sm.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 10px;
+            color: #4a4a56;
+            padding-right: 18px;
+        }
+        &:hover {
+            box-shadow: 0 26px 49px rgba(146, 165, 184, 0.14);
+            .box-link {
+                background-image: url(#{$img_dir}icons/arrow-right-sm-primary.svg);
+                color: $primary;
+            }
+            &:before {
+                background: transparent;
+            }
+        }
+    }
+}
+/* Team section */
+.team-section {
+    margin-bottom: 214px;
+    .nav-pills {
+        background-color: rgba($color: $primary, $alpha: 0.06);
+        width: 483px;
+        border-radius: 14px;
+        padding: 8px;
+        .nav-link {
+            color: #2f2c4a;
+            border-radius: 14px;
+            padding: 14px 16px;
+            &.active {
+                color: #fff;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    .card {
+        background: #fff;
+        color: #656464;
+        border: 2px solid rgba($color: #f3f3f3, $alpha: 0.5);
+        padding: 30px 52px;
+        border-radius: 14px;
+        transition: all 0.3s;
+        &:hover {
+            border-color: transparent;
+            box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
+        }
+    }
+    .photo-wrap {
+        position: relative;
+        background: url(#{$img_dir}home/photo-border.png) no-repeat center center;
+        background-size: 100% auto;
+        width: 166px;
+        height: 166px;
+        padding: 12px;
+        .photo {
+            background-color: #e2eeff;
+        }
+        &:after {
+            content: url(#{$img_dir}icons/check-circle-primary.svg);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            margin-left: -12px;
+        }
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .banner-img {
+        max-width: 450px;
+        height: auto;
+    }
+    .achievement-section {
+        margin-bottom: 100px;
+    }
+    .team-section {
+        margin-bottom: 80px;
+        .card {
+            padding: 30px 20px;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .about-section {
+        padding: 80px 0;
+    }
+    .achievement-section {
+        margin-bottom: 90px;
+    }
+}
+@media (max-width: 767.98px) {
+    .banner {
+        padding: 40px 0 50px;
+    }
+    .cta {
+        .btn {
+            min-width: 200px;
+            margin: 0 10px;
+        }
+    }
+    .achievement-section {
+        margin-bottom: 70px;
+    }
+    .team-section {
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 575.98px) {
+    .banner {
+        padding: 30px 0 50px;
+    }
+    .cta {
+        .btn {
+            min-width: 220px;
+            margin: 0;
+        }
+    }
+    .banner-img {
+        max-width: 100%;
+    }
+    .about-section {
+        padding: 50px 0;
+    }
+    .achievement-section {
+        margin-bottom: 50px;
+        .content-box {
+            padding: 30px 18px 30px 30px;
+        }
+    }
+    .team-section {
+        margin-bottom: 50px;
+        .nav-pills {
+            width: auto;
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+}

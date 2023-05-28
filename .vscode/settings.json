@@ -1,0 +1,18 @@
+{
+    "liveSassCompile.settings.autoprefix": [
+        
+        "> 1%",
+       "last 2 versions"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Error",
+    "liveSassCompile.settings.useNewCompiler": true
+}

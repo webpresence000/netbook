@@ -1,0 +1,14 @@
+$img_dir: "../images/" !default;
+.dropdown-toggle {
+    &:after {
+        background: url(#{$img_dir}icons/chevron-down.svg) no-repeat;
+        width: 7px;
+        height: 5px;
+        border: none;
+    }
+    &:hover {
+        &:after {
+            background: url(#{$img_dir}icons/chevron-down-dark.svg) no-repeat;
+        }
+    }
+}

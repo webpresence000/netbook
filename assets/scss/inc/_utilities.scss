@@ -1,0 +1,45 @@
+.fs-small { font-size: 12px !important;}
+.fs-medium { font-size: 14px !important;}
+.fs-5 { font-size: 18px !important; }
+.min-w-medium { min-width: 177px !important; }
+.h-small {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.bdrs-8 { border-radius: 8px !important; }
+
+// Text colors
+.text-dark { color: $dark !important; }
+.text-primary { color: $primary !important; }
+
+// List
+.bullets-primary {
+    li {
+        position: relative;
+        color: #171648;
+        padding-left: 30px;
+        &:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-color: rgba($color: $primary, $alpha: 0.1);
+            position: absolute;
+            top: 5px;
+            left: 0;
+            border-radius: 100px;
+        }
+        &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: $primary;
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            border-radius: 100px;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .fs-5 { font-size: 16px !important; }
+}

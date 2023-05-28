@@ -4,12 +4,257 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="netbook description">
 	<title>Netbook</title>
-
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/home.min.css">
 </head>
 <body>
-	<h1>Netbook</h1>
+	<header>
+		<!-- Nav start -->
+		<nav class="navbar navbar-expand-lg bg-transparent">
+			<div class="container">
+				<a class="navbar-brand" aria-label="logo" href="#"><img width="143px" height="34px" src="assets/images/icons/logo.svg" alt="Logo"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="d-flex search-form d-block d-sm-none" role="search">
+						<input class="form-control input-search has-icon rounded-0 fs-small me-sm-5" type="search" placeholder="Search Here..." aria-label="Search">
+					</form>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">Community <i class="bi bi-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Events</a>
+						</li>
+					</ul>
+					<form class="d-flex search-form d-none d-sm-block" role="search">
+						<input class="form-control input-search has-icon rounded-0 fs-small me-sm-5" type="search" placeholder="Search Here..." aria-label="Search">
+					</form>
+					<a href="#" class="btn btn-h-md d-block d-sm-inline-block mb-3 mb-sm-0 btn-primary fs-small">Log in</a>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav end -->
+		
+		<!-- Banner start -->
+		<section class="banner-wrap">
+			<div class="container">
+				
+				<div class="d-lg-flex align-items-center banner">
+					<div class="me-md-4 py-3 text-center text-lg-start">
+						<a href="#" class="btn btn-skyblue text-primary fs-small fw-medium min-w-medium h-small bdrs-8 shadow-none">Netbook community</a>
+						<br><br>
+						<h1 class="fw-bold text-dark mb-3">Your Solutions For Community!</h1>
+						<p class="fs-5">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+						<br class="d-none d-sm-block">
+						<div class="cta mb-0 mb-sm-4 mb-lg-0">
+							<a href="#" class="btn btn-primary btn-standard mb-3 mb-sm-0">About More</a><br class="d-block d-sm-none">
+							<a href="#" class="btn btn-outline-primary btn-standard mb-3 mb-sm-0 shadow-none fw-medium">Invite Friend</a>
+						</div>
+					</div>
+					<div class="text-center text-lg-end">
+						<img class="banner-img" width="590px" height="500px" src="assets/images/home/banner.png" alt="Community Solutions">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner end -->
+	</header>
+
+	<!-- Main start -->
+	<main>
+		<!-- About -->
+		<section class="about-section">
+			<div class="container">
+				<div class="d-md-flex align-items-center">
+					<div class="col-xlg-4 col-lg-5 col-md-6">
+						<span class="fs-5 text-primary fw-medium">Whats Netboks?</span>
+						<h2 class="fw-bold text-dark mb-3">Why Join to Netbook Social Network?</h2>
+						<p class="mb-4">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
+						<ul class="fs-5 fw-medium bullets-primary list-unstyled">
+							<li>Groups</li>
+							<li>Messages</li>
+							<li>Share</li>
+						</ul>
+					</div>
+					<div class="col-md-6 offset-xlg-2 offset-lg-1 offset-0 text-center">
+						<div class="d-flex align-items-center">
+							<div>
+								<img width="270px" height="368px" class="d-block featured-img" src="assets/images/home/about-img1.png" alt="">
+							</div>
+							<div class="ms-lg-4 ms-3">
+								<img width="265px" height="238px" class="d-block featured-img mb-4" src="assets/images/home/about-img2.png" alt="">
+								<img width="265px" height="238px" class="d-block featured-img" src="assets/images/home/about-img3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Achievements -->
+		<section class="achievement-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xlg-7">
+						<div class="d-md-flex">
+							<div class="content-box bg-white mb-4 mb-xlg-0">
+								<span class="d-block title fw-medium text-dark icon-rating">4.8 Rating</span>
+								<span class="d-block sub-title icon-members fw-medium fs-6 py-3"><span class="fw-semibold text-primary">+836k</span> Members</span>
+								<p>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+								<a href="#" class="fs-6 fw-medium text-decoration-none box-link">Join Our Community</a>
+							</div>
+							<div class="content-box bg-white ms-md-4 mb-5 mb-md-4 mb-xlg-0">
+								<span class="d-block title fw-medium text-dark icon-trophy">Awwwards</span>
+								<span class="d-block sub-title icon-github fw-medium fs-6 py-3">Best of <span class="fw-semibold text-primary">2021</span> on Github</span>
+								<p>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+								<a href="#" class="fs-6 fw-medium text-decoration-none box-link">Go To Awards</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xlg-4 offset-xlg-1">
+						<span class="fs-5 text-primary fw-medium">Our Achievement</span>
+						<h2 class="fw-bold text-dark mb-3">We are Connecting You The Digital Life.</h2>
+						<p class="mb-4">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
+						<div class="text-center text-sm-start">
+							<a href="#" class="btn btn-primary has-arrow">Discover me</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Team members -->
+		<section class="team-section">
+			<div class="container">
+				<div class="text-center">
+					<span class="fs-5 text-primary fw-medium">Valuable Team</span>
+					<h2 class="fw-bold text-dark mb-3">Our Active Members</h2>
+					<p class="mb-4">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+				</div>
+				
+				<ul class="nav nav-pills nav-fill m-auto mb-4 mb-sm-5 fw-medium" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+							role="tab" aria-controls="home" aria-selected="true">Newest</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+							role="tab" aria-controls="profile" aria-selected="false">Popular</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+							role="tab" aria-controls="contact" aria-selected="false">Active</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row">
+							<div class="col-sm-6 col-lg-3">
+								<div class="card text-center mb-3 mb-sm-4 mb-lg-0">
+									<div class="photo-wrap m-auto rounded-circle mb-4">
+										<span class="photo d-block rounded-circle overflow-hidden">
+											<img width="142px" height="142px" src="assets/images/home/team-member.png" alt="team member 1">
+										</span>
+									</div>
+									<span class="fs-4 d-block fw-semibold text-dark">Kazi Rahman</span>
+									<span class="fs-6">@Rahman</span>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card text-center mb-3 mb-sm-4 mb-lg-0">
+									<div class="photo-wrap m-auto rounded-circle mb-4">
+										<span class="photo d-block rounded-circle overflow-hidden">
+											<img width="142px" height="142px" src="assets/images/home/team-member.png" alt="team member 2">
+										</span>
+									</div>
+									<span class="fs-4 d-block fw-semibold text-dark">Kazi Rahman</span>
+									<span class="fs-6">@Rahman</span>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card text-center mb-3 mb-sm-4 mb-lg-0">
+									<div class="photo-wrap m-auto rounded-circle mb-4">
+										<span class="photo d-block rounded-circle overflow-hidden">
+											<img width="142px" height="142px" src="assets/images/home/team-member.png" alt="team member 3">
+										</span>
+									</div>
+									<span class="fs-4 d-block fw-semibold text-dark">Kazi Rahman</span>
+									<span class="fs-6">@Rahman</span>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card text-center mb-3 mb-sm-4 mb-lg-0">
+									<div class="photo-wrap m-auto rounded-circle mb-4">
+										<span class="photo d-block rounded-circle overflow-hidden">
+											<img width="142px" height="142px" src="assets/images/home/team-member.png" alt="team member 4">
+										</span>
+									</div>
+									<span class="fs-4 d-block fw-semibold text-dark">Kazi Rahman</span>
+									<span class="fs-6">@Rahman</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						profile
+					</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						contact
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Main end -->
+
+	<!-- Footer start -->
+	<footer id="footer">
+		<div class="container">
+			<div class="d-lg-flex align-items-center">
+				<a href="#" class="logo" aria-label="footer logo"><img width="143px" height="34px" src="assets/images/icons/logo-light.svg" alt=""></a>
+				<div id="footer-nav" class="fw-medium py-3 py-lg-0">
+					<a href="#">Home</a>
+					<a href="#">Resources</a>
+					<a href="#">Community</a>
+					<a href="#">Members</a>
+				</div>
+				<div class="social-links ms-auto">
+					<a href="#"><img width="22px" height="22px" src="assets/images/icons/social/twitter.svg" alt="twitter"></a>
+					<a href="#"><img width="22px" height="22px" src="assets/images/icons/social/instagram.svg" alt="instagram"></a>
+					<a href="#"><img width="22px" height="22px" src="assets/images/icons/social/facebook.svg" alt="facebook"></a>
+					<a href="#"><img width="22px" height="22px" src="assets/images/icons/social/linkedin.svg" alt="linkedin"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
